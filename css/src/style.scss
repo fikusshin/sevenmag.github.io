@@ -39,8 +39,30 @@
     margin-top: 41px;
     padding: 0;
     list-style-type: none;
+    background-color: #2d2d2d;
   }
   &__item {
-    width: 100vw;
+    width: 100%;
+    border-top: 1px solid gray;
+  }
+
+  &__item:last-child {
+    border-bottom: 1px solid gray;
+  }
+
+  &__link {
+    display: block;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition-property: all;
+    transition-duration: .3s;
+  }
+  &__link:hover,&__link:focus {
+    background-color: gray;
+    color: #000;
   }
 }
