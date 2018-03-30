@@ -24,14 +24,25 @@
   &__nav {
     position: absolute;
     top: 25px;
+    right: 0;
   }
 
   &__btn {
+    display: block;
+    padding: 0;
     float: right;
+    margin-top: -10px;
     margin-right: 10px;
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: inherit;
+    border: none;
+    outline: none;
   }
 
   &__list {
+    display: none;
     clear: both;
     text-align: center;
     width: 100vw;
@@ -64,5 +75,23 @@
   &__link:hover,&__link:focus {
     background-color: gray;
     color: #000;
+  }
+}
+
+.search {
+  display: none;
+}
+
+.news {
+  display: inline;
+  overflow: hidden;
+  white-space: nowrap;
+  &__title {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+  &__item {
+    display: inline;
   }
 }
